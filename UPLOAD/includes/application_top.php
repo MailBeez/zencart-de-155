@@ -180,3 +180,7 @@ $customers_ip_address = $_SERVER['REMOTE_ADDR'];
 if (!isset($_SESSION['customers_ip_address'])) {
   $_SESSION['customers_ip_address'] = $customers_ip_address;
 }
+
+
+// MailBeez Click and Order tracker
+require(DIR_FS_CATALOG . 'mailhive/includes/clicktracker.php');
