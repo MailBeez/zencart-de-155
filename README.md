@@ -34,3 +34,4 @@ Automatisches Update der Wechselkurse für Währungen via cron
 Zen Colorbox integriert
 Zahlungsart Bar bei Abholung integriert
 Mehrsprachige Ländernamen integriert
+Vorintegration des MailBeez Email Marketing Systems
