@@ -16,6 +16,11 @@
 // This should be first line of the script:
 $zco_notifier->notify('NOTIFY_HEADER_START_PRODUCT_REVIEWS_WRITE');
 
+// MailBeez autologin
+if (file_exists(DIR_FS_CATALOG . 'mailhive/mailbeez/review_advanced/includes/autologin.php')) {
+    include_once(DIR_FS_CATALOG . 'mailhive/mailbeez/review_advanced/includes/autologin.php');
+}
+
 if (!$_SESSION['customer_id']) {
   $_SESSION['navigation']->set_snapshot();
   zen_redirect(zen_href_link(FILENAME_LOGIN, '', 'SSL'));
@@ -115,8 +120,18 @@ if (isset($_GET['action']) && ($_GET['action'] == 'process')) {
     }
     // end send email
    }
+    // MailBeez autologoff
+    if (file_exists(DIR_FS_CATALOG . 'mailhive/mailbeez/review_advanced/includes/autologoff.php')) {
+       include_once(DIR_FS_CATALOG . 'mailhive/mailbeez/review_advanced/includes/autologoff.php');
+    }
+
     zen_redirect(zen_href_link(FILENAME_PRODUCT_REVIEWS, zen_get_all_get_params(array('action'))));
   }
+}
+
+// MailBeez autologoff
+if (file_exists(DIR_FS_CATALOG . 'mailhive/mailbeez/review_advanced/includes/autologoff.php')) {
+   include_once(DIR_FS_CATALOG . 'mailhive/mailbeez/review_advanced/includes/autologoff.php');
 }
 
 $products_price = zen_get_products_display_price($product_info->fields['products_id']);
