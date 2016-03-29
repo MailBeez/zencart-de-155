@@ -1,0 +1,60 @@
+====================================================================.
+========================== INSTALLATION LOG ========================'
+
+[2016/03/20 07:04:23] Host: Darwin MacBook-Pro.local 15.3.0 Darwin Kernel Version 15.3.0: Thu Dec 10 18:40:58 PST 2015; root:xnu-3248.30.4~1/RELEASE_X86_64 x86_64
+[2016/03/20 07:04:23] Operating system: Darwin
+[2016/03/20 07:04:23] Memory limit: 128M
+[2016/03/20 07:04:23] Max execution time: 3600
+[2016/03/20 07:04:23] Server request: content/mailbeez_package_installer_steps/de?p=YTo0OntzOjY6ImRvbWFpbiI7czo5OiJsb2NhbGhvc3QiO3M6MToicCI7czoxMDoib3Njb21tZXJjZSI7czoxOiJhIjtzOjM6ImNyZSI7czozOiJ1cmwiO3M6NjA6ImFIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dmMyTmZiV0ZwYkdocGRtVXZZMkYwWVd4dlp5OWhaRzFwYmk4PSI7fQ%253D%253D
+[2016/03/20 07:04:23] Server request: content/mailbeez_package_installer_final/de?p=YTo0OntzOjY6ImRvbWFpbiI7czo5OiJsb2NhbGhvc3QiO3M6MToicCI7czoxMDoib3Njb21tZXJjZSI7czoxOiJhIjtzOjM6ImNyZSI7czozOiJ1cmwiO3M6NjA6ImFIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dmMyTmZiV0ZwYkdocGRtVXZZMkYwWVd4dlp5OWhaRzFwYmk4PSI7fQ%253D%253D
+[2016/03/20 07:04:23] Execute AJAX handler: onCheckRequirement
+[2016/03/20 07:04:23] System check: phpVersion
+[2016/03/20 07:04:23] Requirement phpVersion +OK
+[2016/03/20 07:04:24] Execute AJAX handler: onCheckRequirement
+[2016/03/20 07:04:24] System check: safeMode
+[2016/03/20 07:04:24] Requirement safeMode +OK
+[2016/03/20 07:04:24] Execute AJAX handler: onCheckRequirement
+[2016/03/20 07:04:24] System check: curlLibrary
+[2016/03/20 07:04:24] Requirement curlLibrary +OK
+[2016/03/20 07:04:25] Execute AJAX handler: onCheckRequirement
+[2016/03/20 07:04:25] System check: liveConnectionPrivate
+[2016/03/20 07:04:25] Server request: ping?p=YTo0OntzOjY6ImRvbWFpbiI7czo5OiJsb2NhbGhvc3QiO3M6MToicCI7czoxMDoib3Njb21tZXJjZSI7czoxOiJhIjtzOjM6ImNyZSI7czozOiJ1cmwiO3M6NjA6ImFIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dmMyTmZiV0ZwYkdocGRtVXZZMkYwWVd4dlp5OWhaRzFwYmk4PSI7fQ%253D%253D&apikey=efd983cf80f0df4f2c817356a0eaca426e266e23
+[2016/03/20 07:04:25] Server request: ping
+[2016/03/20 07:04:25] Request information: Array
+(
+    [url] => http://staging.cloudbeez.com/api/private/v1/ping?p=YTo0OntzOjY6ImRvbWFpbiI7czo5OiJsb2NhbGhvc3QiO3M6MToicCI7czoxMDoib3Njb21tZXJjZSI7czoxOiJhIjtzOjM6ImNyZSI7czozOiJ1cmwiO3M6NjA6ImFIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dmMyTmZiV0ZwYkdocGRtVXZZMkYwWVd4dlp5OWhaRzFwYmk4PSI7fQ%253D%253D&apikey=efd983cf80f0df4f2c817356a0eaca426e266e23
+    [content_type] => 
+    [http_code] => 0
+    [header_size] => 0
+    [request_size] => 0
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0
+    [namelookup_time] => 0
+    [connect_time] => 0
+    [pretransfer_time] => 0
+    [size_upload] => 0
+    [size_download] => 0
+    [speed_download] => 0
+    [speed_upload] => 0
+    [download_content_length] => -1
+    [upload_content_length] => -1
+    [starttransfer_time] => 0
+    [redirect_time] => 0
+    [certinfo] => Array
+        (
+        )
+
+    [redirect_url] => 
+)
+
+[2016/03/20 07:04:25] Handler error (onCheckRequirement): Server responded had no response.
+[2016/03/20 07:04:25] Trace log:
+#0 /MailBeez Repository/dev_mailbeez_installer/catalog/mailhive/cloudbeez/cloudloader/php/Cloudloader.php(124): Cloudloader->requestServerData('ping', '', 'private')
+#1 /MailBeez Repository/dev_mailbeez_installer/catalog/mailhive/cloudbeez/cloudloader/php/Cloudloader.php(91): Cloudloader->onCheckRequirement()
+#2 /MailBeez Repository/dev_mailbeez_installer/catalog/mailhive/cloudbeez/cloudloader/php/CloudloaderInit.php(26): Cloudloader->run()
+#3 /MailBeez Repository/dev_mailbeez_installer/catalog/mailhive/cloudbeez/cloudloader_packages.php(28): include('/MailBeez Repos...')
+#4 /MailBeez Repository/dev_mailbeez_installer/catalog/mailhive/cloudbeez/cloudloader/bootstrap/inc_mailbeez.php(41): require_once('/MailBeez Repos...')
+#5 /MailBeez Repository/dev_mailbeez/catalog/admin/mailbeez.php(51): require_once('/MailBeez Repos...')
+#6 {main}
